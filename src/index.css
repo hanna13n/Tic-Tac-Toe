@@ -1,12 +1,12 @@
 body {
-  font: 14px "Century Gothic", Futura, sans-serif;
-  margin: 20px;
+  font: 1.25rem "Century Gothic", Futura, sans-serif;
+  margin: 60px;
   background-color: #66bfbf;
 }
 
 ol,
 ul {
-  padding-left: 30px;
+  padding-left: 90px;
 }
 .list-cur {
   background-color: #40514e;
@@ -23,7 +23,7 @@ ul {
 }
 
 .status {
-  margin-bottom: 10px;
+  margin-bottom: 30px;
 }
 .game-end {
   background-color: #810000;
@@ -36,17 +36,17 @@ ul {
 .square {
   background: #66bfbf;
   color: brown;
-  border: 2px solid teal;
+  border: 6px solid teal;
   float: left;
-  font-size: 24px;
+  font-size: 72px;
   font-weight: bold;
-  line-height: 34px;
-  height: 34px;
-  margin-right: -1px;
-  margin-top: -1px;
+  line-height: 102px;
+  height: 102px;
+  margin-right: -3px;
+  margin-top: -3px;
   padding: 0;
   text-align: center;
-  width: 34px;
+  width: 102px;
 }
 
 .square:focus {
@@ -63,7 +63,7 @@ ul {
 }
 
 .game-info {
-  margin-left: 20px;
+  margin-left: 60px;
 }
 .winner {
   border: solid #ce1212;
