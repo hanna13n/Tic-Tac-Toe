@@ -17,6 +17,11 @@ ul {
 .status {
   margin-bottom: 10px;
 }
+.winner {
+  background-color: red;
+  color: yellow;
+  text-align: center;
+}
 
 .square {
   background: #fff;
