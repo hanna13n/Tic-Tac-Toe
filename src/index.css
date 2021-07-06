@@ -1,16 +1,21 @@
 body {
   font: 14px "Century Gothic", Futura, sans-serif;
   margin: 20px;
+  background-color: #66bfbf;
 }
 
 ol,
 ul {
   padding-left: 30px;
 }
-.current_item {
-  border: solid;
+.list-cur {
+  background-color: #40514e;
+  color: whitesmoke;
 }
-
+.list {
+  background-color: #798777;
+  color: whitesmoke;
+}
 .board-row:after {
   clear: both;
   content: "";
@@ -21,14 +26,17 @@ ul {
   margin-bottom: 10px;
 }
 .game-end {
-  background-color: red;
-  color: yellow;
+  background-color: #810000;
+  color: whitesmoke;
+  padding: 10px;
   text-align: center;
+  font-size: 1.25rem;
 }
 
 .square {
-  background: #fff;
-  border: 1px solid #999;
+  background: #66bfbf;
+  color: brown;
+  border: 2px solid teal;
   float: left;
   font-size: 24px;
   font-weight: bold;
@@ -48,15 +56,15 @@ ul {
 .kbd-navigation .square:focus {
   background: #ddd;
 }
-
 .game {
   display: flex;
   flex-direction: row;
+  justify-content: center;
 }
 
 .game-info {
   margin-left: 20px;
 }
 .winner {
-  border: solid red;
+  border: solid #ce1212;
 }
