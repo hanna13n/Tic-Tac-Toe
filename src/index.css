@@ -17,7 +17,7 @@ ul {
 .status {
   margin-bottom: 10px;
 }
-.winner {
+.game-end {
   background-color: red;
   color: yellow;
   text-align: center;

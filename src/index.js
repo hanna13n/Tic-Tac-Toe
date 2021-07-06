@@ -101,20 +101,27 @@ class Game extends React.Component {
                 </li>
             );
         });
-        let status;
-        if (winner)
-            status = 'Winner: ' + winner + ', Congratulations!!!';
-        else
-            status = 'Next player: ' + (this.state.xIsNext ? 'X' : 'O');
+
         const Findstatus = () => {
-            if (winner)
+            let status;
+            if (winner) {
+                status = 'Winner: ' + winner + ', Congratulations!!!';
                 return (
-                    <p className='winner'>{status}</p>
+                    <p className='game-end'>{status}</p>
                 );
-            else
+            }
+            else if (current.squares.every((i) => i !== null)) {
+                status = 'Tie!!!'
+                return (
+                    <p className='game-end'>{status}</p>
+                );
+            }
+            else {
+                status = 'Next player: ' + (this.state.xIsNext ? 'X' : 'O');
                 return (
                     <p>{status}</p>
                 );
+            }
         }
         return (
             <div className="game">
